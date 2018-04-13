@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator project</title>
+	<link rel="Stylesheet" href="../css/Style.css">
+</head>
+<body>
+	<h2>Calculator</h2>
+	<div class="main"><!--starting of main-->
+	<div class="output">
+	<p><!--paragraph 1 containing textfield to display-->
+		<input type="text" size="20" readonly id="d" >
+	</p>
+</div><!--ending of output clas-->
+<div class="all_buttons">
+	<p>
+		<input type="button" value="7"  class="btn white-style" onclick='math("7")'>
+		<input type="button" value="8" class="btn white-style" onclick='math("8")'>
+		<input type="button" value="9" class="btn white-style" onclick='math("9")'>
+		<input type="button" class="btn red-style" value="&#8592;" onclick='back()'>
+		<input type="button" value="C" class="btn red-style" onclick='c(" ")'>
+		
+	</p>
+
+	<p>
+		<input type="button" value="4" class="btn white-style" onclick='math("4")'>
+		<input type="button" value="5" class="btn white-style" onclick='math("5")'>
+		<input type="button" value="6" class="btn white-style" onclick='math("6")'>
+		<input type="button" value="+" class="btn orange-style" onclick='math("+")'>
+		<input type="button" value="*" class="btn orange-style" onclick='math("*")'>
+	</p>
+
+	<p>
+		<input type="button" value="1" class="btn white-style" onclick='math("1")'>
+		<input type="button" value="2" class="btn white-style" onclick='math("2")'>
+		<input type="button" value="3" class="btn white-style" onclick='math("3")'>
+		<input type="button" value="-" class="btn orange-style" onclick='math("-")'>
+		<input type="button" value="/" class="btn orange-style" onclick='math("/")'>
+	</p>
+
+	<p>
+		<input type="button" value="(" class="btn white-style" onclick='math("(")'>
+		<input type="button" value=")" class="btn white-style" onclick='math(")")'>
+		<input type="button" value="0" class="btn white-style" onclick='math("0")'>
+		<input type="button" value="." class="btn orange-style" onclick='math(".")'>
+		<input type="button" value="=" class="btn orange-style" onclick='e()'>
+	</p>
+</div><!--end of all_button-->
+</div><!--end of main-->
+<script type="text/javascript" src="../javast/myScript.js"></script>
+</body>
+</html>
